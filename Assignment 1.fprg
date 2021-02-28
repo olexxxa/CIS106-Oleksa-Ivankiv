@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 10:42:18 AM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDItMjg7MTA6MTU6NDIgQU07MzY2OA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDItMjg7MTA6NDI6MTggQU07MjszNzgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter first number&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Please input second number&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Sum of first number &quot; &amp; A &amp; &quot; and second number &quot; &amp; B &amp; &quot; is = &quot; &amp; A+B" newline="True"/>
+            <output expression="&quot;The product of first number &quot; &amp; A &amp; &quot; and second number &quot; &amp; B &amp; &quot; is = &quot; &amp; A*B" newline="True"/>
+            <output expression="&quot;Diffenrence of first number &quot; &amp; A &amp; &quot; and second number &quot; &amp; B &amp; &quot; is = &quot; &amp; A-B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

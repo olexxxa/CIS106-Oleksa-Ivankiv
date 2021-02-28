@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-28 11:07:05 AM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDItMjg7MTE6MDQ6MDMgQU07MzY2NA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDItMjg7MTE6MDc6MDUgQU07MTszNzc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M" type="Real" array="False" size=""/>
+            <declare name="G" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter miles travelled&quot;" newline="True"/>
+            <input variable="M"/>
+            <output expression="&quot;Please enter how many Gallons used&quot;" newline="True"/>
+            <input variable="G"/>
+            <output expression="&quot;During the trip your gasoline usage was &quot; &amp; M/G &amp; &quot; MPG&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
