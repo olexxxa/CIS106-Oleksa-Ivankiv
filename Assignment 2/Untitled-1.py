@@ -1,0 +1,5 @@
+print("Please enter your first score")
+eS1 = float(input())
+print("Please enter your second score")
+eS2 = float(input())
+print("Your total score for two exams is " + str((eS1 * 0.6 + eS2 * 0.4)))

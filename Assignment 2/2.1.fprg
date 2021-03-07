@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-07 02:16:21 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDE6NDE6NTQgUE07MzY4Mw=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDI6MTY6MjEgUE07MTszNzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ES1" type="Real" array="False" size=""/>
+            <declare name="ES2" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter your first score&quot;" newline="True"/>
+            <input variable="ES1"/>
+            <output expression="&quot;Please enter your second score&quot;" newline="True"/>
+            <input variable="ES2"/>
+            <output expression="&quot;Your total score for two exams is &quot; &amp; ES1*0.6+ES2*0.4" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

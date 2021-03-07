@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-07 02:27:29 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDE6NDE6NTQgUE07MzY4Mw=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDI6Mjc6MjkgUE07MzszODAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IP" type="Real" array="False" size=""/>
+            <declare name="D" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter price of an item&quot;" newline="True"/>
+            <input variable="IP"/>
+            <output expression="&quot;Please enter a discount precentage&quot;" newline="True"/>
+            <input variable="D"/>
+            <output expression="&quot;Your total amount to pay after a discount is &quot; &amp; IP-(D/100)*IP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-07 02:22:02 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDE6NDE6NTQgUE07MzY4Mw=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMDc7MDI6MjI6MDIgUE07MjszNzg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SP" type="Real" array="False" size=""/>
+            <declare name="Q" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter stock value&quot;" newline="True"/>
+            <input variable="SP"/>
+            <output expression="&quot;Please enter Quantity of your stocks&quot;" newline="True"/>
+            <input variable="Q"/>
+            <output expression="&quot;Your current value of stock is &quot; &amp; SP*Q" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

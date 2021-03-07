@@ -1,0 +1,5 @@
+print("Please enter price of an item")
+iP = float(input())
+print("Please enter a discount precentage")
+d = float(input())
+print("Your total amount to pay after a discount is " + str((iP - d / 100 * iP)))

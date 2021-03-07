@@ -1,0 +1,5 @@
+print("Please enter stock value")
+sP = float(input())
+print("Please enter Quantity of your stocks")
+q = float(input())
+print("Your current value of stock is " + str(sP * q))
