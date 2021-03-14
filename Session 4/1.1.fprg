@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-14 02:05:51 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDE6NTE6MDUgUE07MzY3OA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDI6MDU6NTEgUE07MTszNzg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Q" type="Integer" array="False" size=""/>
+            <declare name="FP" type="Real" array="False" size=""/>
+            <declare name="T" type="Real" array="False" size=""/>
+            <declare name="P" type="Real" array="False" size=""/>
+            <declare name="EP" type="Integer" array="False" size=""/>
+            <assign variable="T" expression="0.07"/>
+            <output expression="&quot;Please input Quatity of items&quot;" newline="True"/>
+            <input variable="Q"/>
+            <if expression="Q&lt;1000">
+                <then>
+                    <assign variable="P" expression="5.00"/>
+                    <assign variable="EP" expression="Q*P"/>
+                    <assign variable="FP" expression="EP*T+EP"/>
+                </then>
+                <else>
+                    <assign variable="P" expression="3.00"/>
+                    <assign variable="EP" expression="Q*P"/>
+                    <assign variable="FP" expression="EP*T+EP"/>
+                </else>
+            </if>
+            <output expression="&quot;Quantity is &quot; &amp; Q &amp; &quot;, Unit price is &quot; &amp; P &amp; &quot;, Extended price is &quot; &amp; EP &amp; &quot;, Tax is &quot; &amp; T*100 &amp; &quot;%,&quot; &amp; &quot; Total amount is &quot; &amp; FP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

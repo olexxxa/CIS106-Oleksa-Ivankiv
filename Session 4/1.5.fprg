@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-14 05:13:07 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDI6NDU6MTAgUE07MzY3OA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDU6MTM6MDcgUE07NjszNzk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="UN" type="String" array="False" size=""/>
+            <declare name="IT" type="Integer" array="False" size=""/>
+            <declare name="AGI" type="Integer" array="False" size=""/>
+            <declare name="GI" type="Integer" array="False" size=""/>
+            <declare name="DQ" type="Integer" array="False" size=""/>
+            <declare name="TR" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter your last name&quot;" newline="True"/>
+            <input variable="UN"/>
+            <output expression="&quot;Please input number of dependents&quot;" newline="True"/>
+            <input variable="DQ"/>
+            <output expression="&quot;Please enter your gross income&quot;" newline="True"/>
+            <input variable="GI"/>
+            <assign variable="AGI" expression="GI-DQ*12000"/>
+            <if expression="AGI&gt;50000">
+                <then>
+                    <assign variable="TR" expression="0.20"/>
+                    <assign variable="IT" expression="AGI*TR"/>
+                </then>
+                <else>
+                    <if expression="AGI&gt;=0">
+                        <then>
+                            <assign variable="TR" expression="0.10"/>
+                            <assign variable="IT" expression="AGI*TR"/>
+                        </then>
+                        <else>
+                            <assign variable="IT" expression="100"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Your last name entered is &quot; &amp; UN &amp; &quot;, Gross income is &quot; &amp; GI &amp; &quot;, Number of dependence is &quot; &amp; DQ &amp; &quot;, Adjusted gross income is &quot; &amp; AGI &amp; &quot;, Income tax is &quot; &amp; IT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

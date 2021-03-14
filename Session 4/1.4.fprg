@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-14 04:38:42 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDI6NDU6MTAgUE07MzY3OA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDQ6Mzg6NDIgUE07NTszNzk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="UN" type="String" array="False" size=""/>
+            <declare name="UP" type="Integer" array="False" size=""/>
+            <declare name="TP" type="Integer" array="False" size=""/>
+            <declare name="WP" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter appliance name&quot;" newline="True"/>
+            <input variable="UN"/>
+            <output expression="&quot;Please input price&quot;" newline="True"/>
+            <input variable="UP"/>
+            <if expression="UP&gt;1000">
+                <then>
+                    <assign variable="WP" expression="UP*0.10"/>
+                    <assign variable="TP" expression="UP+WP"/>
+                </then>
+                <else>
+                    <assign variable="WP" expression="UP*0.05"/>
+                    <assign variable="TP" expression="UP+WP"/>
+                </else>
+            </if>
+            <output expression="&quot;Item name entered is &quot; &amp; UN &amp; &quot;, Unit price is &quot; &amp; UP &amp; &quot;, Warantee price is &quot; &amp; WP &amp; &quot;, Grand total ammount is &quot; &amp; TP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

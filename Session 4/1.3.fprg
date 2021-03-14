@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-14 03:20:12 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDI6NDU6MTAgUE07MzY3OA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMTQ7MDM6MjA6MTIgUE07MzszNzg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Q" type="Integer" array="False" size=""/>
+            <declare name="P" type="Integer" array="False" size=""/>
+            <declare name="TP" type="Integer" array="False" size=""/>
+            <declare name="SP" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter number of books to order&quot;" newline="True"/>
+            <input variable="Q"/>
+            <output expression="&quot;Please enter price per book&quot;" newline="True"/>
+            <input variable="P"/>
+            <assign variable="TP" expression="Q*P"/>
+            <if expression="TP&gt;50">
+                <then>
+                    <assign variable="SP" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="SP" expression="25"/>
+                    <assign variable="TP" expression="TP+SP"/>
+                </else>
+            </if>
+            <output expression="&quot;Order total is &quot; &amp; TP &amp; &quot;$&quot; &amp; &quot;, including shipping cost - &quot; &amp; SP &amp; &quot;$&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
