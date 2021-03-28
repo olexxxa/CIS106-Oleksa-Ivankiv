@@ -1,0 +1,12 @@
+q = int(input("Please enter quantity of widgets"))
+t = 0.07
+if q > 10000:
+    uP = 10
+else:
+    if q > 5000:
+        uP = 20
+    else:
+        uP = 30
+eP = q * uP
+total = eP * t + eP
+print("Extended price is " + str(eP) + ", Tax is " + str(t) + ", Total is " + str(total))
