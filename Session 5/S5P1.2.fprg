@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-28 12:07:57 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMjg7MTE6NDM6MzQgQU07MzY3Mg=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDMtMjg7MTI6MDc6NTcgUE07MjszODAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PN" type="Integer" array="False" size=""/>
+            <declare name="Q" type="Real" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <declare name="UP" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the part number&quot;" newline="True"/>
+            <input variable="PN"/>
+            <output expression="&quot;Please enter quantity you want to purchuase&quot;" newline="True"/>
+            <input variable="Q"/>
+            <if expression="PN=10 or PN=55">
+                <then>
+                    <assign variable="UP" expression="1"/>
+                </then>
+                <else>
+                    <if expression="PN=99">
+                        <then>
+                            <assign variable="UP" expression="2"/>
+                        </then>
+                        <else>
+                            <if expression="PN=80 or PN=70">
+                                <then>
+                                    <assign variable="UP" expression="3"/>
+                                </then>
+                                <else>
+                                    <assign variable="UP" expression="5"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="Q*UP"/>
+            <output expression="&quot;Part number is &quot; &amp; PN &amp; &quot;, Unit price is &quot; &amp; UP &amp; &quot;, Total is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
