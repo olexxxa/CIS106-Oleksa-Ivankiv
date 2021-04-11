@@ -4,9 +4,9 @@ def mpg (miles, gallons):
   return mpg
 
 
-def cost (mpg):
+def cost (gallons):
   price = 2.50
-  cost = float (mpg)*price
+  cost = gallons*price
 
   return cost
 
@@ -15,7 +15,7 @@ miles = float (input("Enter miles travelled "))
 gallons = float (input("Enter total gallons used "))
 
 mpg = mpg (miles, gallons)
-cost = cost (mpg)
+cost = cost (gallons)
 
 print("Driving to  ", name)
 print("will be ", miles, " miles")
