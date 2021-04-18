@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-18 03:35:53 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MTE6NDE6MjkgQU07MzY3NA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MDM6MzU6NTMgUE07MzszODAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <output expression="&quot;Do you want to start the program?&quot;" newline="True"/>
+            <input variable="Yes"/>
+            <while expression="Yes = &quot;Yes&quot;">
+                <declare name="FN" type="String" array="False" size=""/>
+                <declare name="S1" type="Integer" array="False" size=""/>
+                <declare name="S2" type="Integer" array="False" size=""/>
+                <declare name="AV" type="Real" array="False" size=""/>
+                <output expression="&quot;Plase enter last name than enter, first exam score then enter and second exam score&quot;" newline="True"/>
+                <input variable="FN"/>
+                <input variable="S1"/>
+                <input variable="S2"/>
+                <assign variable="AV" expression="(S1+S2)/2"/>
+                <output expression="&quot;Average is&quot; &amp; AV" newline="True"/>
+                <output expression="&quot;Do you want to repeat the program? (Yes or No)&quot;" newline="True"/>
+                <input variable="Yes"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

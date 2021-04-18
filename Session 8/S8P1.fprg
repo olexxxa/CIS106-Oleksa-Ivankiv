@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-18 12:08:47 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MTE6NDE6MjkgQU07MzY3NA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MTI6MDg6NDcgUE07MTszODAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=25">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i+2"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

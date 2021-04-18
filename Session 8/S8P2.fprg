@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Oleksa Ivankiv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-18 01:24:50 PM"/>
+        <attribute name="created" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MTE6NDE6MjkgQU07MzY3NA=="/>
+        <attribute name="edited" value="T2xla3NhIEl2YW5raXY7REVTS1RPUC1BQjVGNURUOzIwMjEtMDQtMTg7MDE6MjQ6NTAgUE07MjszNzky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <declare name="st" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter start number&quot;" newline="True"/>
+            <input variable="s"/>
+            <output expression="&quot;Please input increase number&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;Please input stop number&quot;" newline="True"/>
+            <input variable="st"/>
+            <while expression="s&lt;=st">
+                <output expression="s" newline="True"/>
+                <assign variable="s" expression="s+i"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
