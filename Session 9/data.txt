@@ -1,0 +1,10 @@
+Ivankiv
+100000.00
+Todorov
+50000.00
+Kotil
+25000.00
+Hrab
+38000.00
+Pihur
+80000.00
