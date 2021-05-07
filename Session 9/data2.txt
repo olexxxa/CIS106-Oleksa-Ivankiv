@@ -1,0 +1,12 @@
+Iphone
+2
+5
+Hammer
+2
+10
+Watch
+4
+8
+Laptop
+2
+10
