@@ -21,6 +21,12 @@ def maxscore (arr, scarr):
   best_name = arr[best_idx]
   print ("Best score is", best_score, "in the best -", best_name)
 
+def minscore (arr, scarr):
+  min_score = min(scarr)
+  min_idx = scarr.index(min_score)
+  min_name = arr[min_idx]
+  print ("Lowest score is ", min_score, "in the -", min_name)
+
 arr = ['Ivankiv','Todorov','Hrab','Kotil']
 scarr = [98,90,99,80]
 printarray(arr, scarr)
@@ -28,3 +34,5 @@ print()
 printreverse(arr, scarr)
 print()
 maxscore(arr, scarr)
+print()
+minscore(arr, scarr)
