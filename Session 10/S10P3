@@ -27,6 +27,11 @@ def minscore (arr, scarr):
   min_name = arr[min_idx]
   print ("Lowest score is ", min_score, "in the -", min_name)
 
+def average (arr, scarr):
+  total = sum(scarr)
+  average_score = total / len(scarr)
+  print (average_score)
+
 arr = ['Ivankiv','Todorov','Hrab','Kotil']
 scarr = [98,90,99,80]
 printarray(arr, scarr)
@@ -36,3 +41,5 @@ print()
 maxscore(arr, scarr)
 print()
 minscore(arr, scarr)
+print()
+average(arr, scarr)
