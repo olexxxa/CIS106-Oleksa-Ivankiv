@@ -1,4 +1,4 @@
-class student:
+class Student:
     def __init__(self,first_name,last_name,district_code,enrolled_credits):
         self.first=first_name
         self.last=last_name
@@ -12,7 +12,7 @@ class student:
             tut= self.enrolled * 500.00  
         return tut 
 
-s=student("Oleksa","Ivankiv","I",8)
+s=Student("Oleksa","Ivankiv","I",8)
 print("First Name is:",s.first)
 print("Last Name is:",s.last)
 print("The tution owned is:",s.tution_owed())
