@@ -1,0 +1,14 @@
+#Employee_Bonus class 
+class Employee_Bonus:
+    def __init__(self,salary,rate):
+        self.salary=salary
+        self.rate=rate 
+        
+    def calculate_bonus(self):
+        return self.salary*self.rate 
+
+print ("Enter bones rent for employee")
+r = float (input())
+e1=Employee_Bonus(500,r)
+print("The employee bonus is",e1.calculate_bonus())
+print()
