@@ -7,7 +7,7 @@ class Employee_Bonus:
     def calculate_bonus(self):
         return self.salary*self.rate 
 
-print ("Enter bones rent for employee")
+print ("Enter bonus rate for employee")
 r = float (input())
 e1=Employee_Bonus(500,r)
 print("The employee bonus is",e1.calculate_bonus())
